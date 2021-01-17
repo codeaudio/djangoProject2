@@ -1,5 +1,8 @@
 # Django settings for anfisa4friends project.
 import os
+
+import django
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'brl0jyv#9dg88#8k9#!%95l!wh32)*=1^61@ccn%aatm27-0h%'
 
@@ -28,7 +31,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
