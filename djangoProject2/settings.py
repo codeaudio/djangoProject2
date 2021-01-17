@@ -28,7 +28,7 @@ LOGGING = {
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 # Application definition
