@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <script src="{% static 'script.js'%}"></script>
+      <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+  </head>
+  <body>
+  <section>
+      <div onclick="aboutProject('{{ about }}')" class="header">
+          <h1 title="{{ about }}"> Анфиса для друзей </h1>
+      </div>
+      <div id="text"></div>
+      <img src="https://pictures.s3.yandex.net/resources/anfisa_1594642601.png">
+            {{ friend_output|safe }}
+            {{ city_weather|safe }}
+            {{ conclusion|safe }}
+      <div class="map">
+            {{ maps|safe }}
+      </div>
+      <form action="/" method="post">
+          <div class='ice'>
+              <h2>Выберите друга</h2>
+              {{ friends|safe }}
+              <h2>Выберите мороженое</h2>
+              {{ icecreams|safe }}
+          </div>
+          <input type="submit" class="button" value="Угостить">
+      </form>
+  </section>
+  </body>
+</html>
