@@ -1,13 +1,13 @@
 # Django settings for anfisa4friends project.
 import os
 
-import django_heroku
+import django
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'brl0jyv#9dg88#8k9#!%95l!wh32)*=1^61@ccn%aatm27-0h%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -31,6 +31,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -116,6 +117,5 @@ STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 LANGUAGE_CODE = 'ru'
-django_heroku.settings(locals(), logging=False)
 
 
