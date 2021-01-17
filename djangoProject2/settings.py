@@ -1,7 +1,7 @@
 # Django settings for anfisa4friends project.
 import os
 
-import django
+import django_heroku
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'brl0jyv#9dg88#8k9#!%95l!wh32)*=1^61@ccn%aatm27-0h%'
@@ -116,5 +116,6 @@ STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 LANGUAGE_CODE = 'ru'
+django_heroku.settings(locals(), logging=False)
 
 
