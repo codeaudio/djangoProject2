@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath djangoProject2 djangoProject2.wsgi
+web: gunicorn djangoProject2.wsgi

@@ -1,5 +1,6 @@
 # Django settings for anfisa4friends project.
 import os
+import django_heroku
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0+-ju&2t-r7==7gs&_@-#q8om7i&lelii&as$b*sjc(j7xcgvv'
 
