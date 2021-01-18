@@ -39,12 +39,8 @@ form{
 
 #text {
     width: 50%;
-
     display: flex;
     justify-content: center;
-
-
-
 }
 
 h1{
@@ -151,7 +147,7 @@ img{
 
 body{
 	background: linear-gradient(-45deg, #4d7e46, #984061, #44646e, #52bca4);
-	background-size: 400% 400%;
+	background-size: 400% 1vw;
 	animation: gradient 15s ease infinite;
 }
 
